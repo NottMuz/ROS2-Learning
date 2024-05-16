@@ -1,0 +1,96 @@
+[0.160s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/examples/rclcpp/composition/minimal_composition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition
+[1.970s] -- The C compiler identification is GNU 9.4.0
+[1.972s] -- The CXX compiler identification is GNU 9.4.0
+[1.973s] -- Check for working C compiler: /usr/bin/cc
+[1.974s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.974s] -- Detecting C compiler ABI info
+[1.976s] -- Detecting C compiler ABI info - done
+[1.977s] -- Detecting C compile features
+[1.977s] -- Detecting C compile features - done
+[1.977s] -- Check for working CXX compiler: /usr/bin/c++
+[1.977s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.977s] -- Detecting CXX compiler ABI info
+[1.977s] -- Detecting CXX compiler ABI info - done
+[1.977s] -- Detecting CXX compile features
+[1.977s] -- Detecting CXX compile features - done
+[1.977s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.977s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.977s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.977s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.977s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.977s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.977s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.977s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.977s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.977s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.977s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.978s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.978s] -- Looking for pthread.h
+[1.978s] -- Looking for pthread.h - found
+[1.978s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.978s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.978s] -- Looking for pthread_create in pthreads
+[1.978s] -- Looking for pthread_create in pthreads - not found
+[1.978s] -- Looking for pthread_create in pthread
+[1.978s] -- Looking for pthread_create in pthread - found
+[1.978s] -- Found Threads: TRUE  
+[2.134s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[2.237s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.368s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.369s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.370s] -- Configured cppcheck include dirs: /home/muzz/ros2_ws/src/examples/rclcpp/composition/minimal_composition/include
+[2.370s] -- Configured cppcheck exclude dirs and/or files: 
+[2.371s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.371s] -- Configured cpplint exclude dirs and/or files: 
+[2.372s] -- Added test 'lint_cmake' to check CMake code style
+[2.374s] -- Added test 'uncrustify' to check C / C++ code style
+[2.374s] -- Configured uncrustify additional arguments: 
+[2.375s] -- Added test 'xmllint' to check XML markup files
+[2.387s] -- Configuring done
+[2.415s] -- Generating done
+[2.417s] -- Build files have been written to: /home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition
+[2.442s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/examples/rclcpp/composition/minimal_composition -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition
+[2.448s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition -- -j16 -l16
+[2.537s] [35m[1mScanning dependencies of target composition_nodes[0m
+[2.654s] [ 11%] [32mBuilding CXX object CMakeFiles/composition_nodes.dir/src/publisher_node.cpp.o[0m
+[2.655s] [ 22%] [32mBuilding CXX object CMakeFiles/composition_nodes.dir/src/subscriber_node.cpp.o[0m
+[10.900s] [ 33%] [32m[1mLinking CXX shared library libcomposition_nodes.so[0m
+[11.192s] [ 33%] Built target composition_nodes
+[11.202s] [35m[1mScanning dependencies of target composition_publisher[0m
+[11.205s] [35m[1mScanning dependencies of target composition_composed[0m
+[11.208s] [35m[1mScanning dependencies of target composition_subscriber[0m
+[11.235s] [ 55%] [32mBuilding CXX object CMakeFiles/composition_publisher.dir/src/standalone_publisher.cpp.o[0m
+[11.235s] [ 55%] [32mBuilding CXX object CMakeFiles/composition_composed.dir/src/composed.cpp.o[0m
+[11.247s] [ 66%] [32mBuilding CXX object CMakeFiles/composition_subscriber.dir/src/standalone_subscriber.cpp.o[0m
+[12.653s] [ 77%] [32m[1mLinking CXX executable composition_composed[0m
+[12.687s] [ 88%] [32m[1mLinking CXX executable composition_publisher[0m
+[12.745s] [100%] [32m[1mLinking CXX executable composition_subscriber[0m
+[12.868s] [100%] Built target composition_composed
+[12.910s] [100%] Built target composition_publisher
+[12.930s] [100%] Built target composition_subscriber
+[12.946s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition -- -j16 -l16
+[13.004s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition
+[13.017s] -- Install configuration: ""
+[13.018s] -- Execute custom install script
+[13.019s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/library_path.sh
+[13.035s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/library_path.dsv
+[13.052s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/lib/libcomposition_nodes.so
+[13.067s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_publisher
+[13.082s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_subscriber
+[13.099s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/lib/examples_rclcpp_minimal_composition/composition_composed
+[13.106s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_composition
+[13.121s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_composition
+[13.138s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/ament_prefix_path.sh
+[13.153s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/ament_prefix_path.dsv
+[13.168s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/path.sh
+[13.184s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/environment/path.dsv
+[13.198s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.bash
+[13.215s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.sh
+[13.230s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.zsh
+[13.244s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/local_setup.dsv
+[13.252s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/package.dsv
+[13.265s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/ament_index/resource_index/packages/examples_rclcpp_minimal_composition
+[13.274s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/cmake/examples_rclcpp_minimal_compositionConfig.cmake
+[13.288s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/cmake/examples_rclcpp_minimal_compositionConfig-version.cmake
+[13.303s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_minimal_composition/share/examples_rclcpp_minimal_composition/package.xml
+[13.322s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/examples_rclcpp_minimal_composition

@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = muzz_package.my_node:main
+

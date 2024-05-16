@@ -1,0 +1,37 @@
+[2.441s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber': PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[2.649s] running develop
+[2.763s] Removing /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples-rclpy-minimal-subscriber.egg-link (link to .)
+[2.813s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber' returned '0': PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[2.815s] Invoking command in '/home/muzz/ros2_ws/src/examples/rclpy/topics/minimal_subscriber': PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --install-scripts $base/lib/examples_rclpy_minimal_subscriber --single-version-externally-managed install_data --force
+[3.017s] running egg_info
+[3.017s] writing ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/PKG-INFO
+[3.018s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/dependency_links.txt
+[3.018s] writing entry points to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/entry_points.txt
+[3.018s] writing requirements to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/requires.txt
+[3.018s] writing top-level names to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/top_level.txt
+[3.050s] reading manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[3.051s] writing manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[3.051s] running build
+[3.051s] running build_py
+[3.051s] running install
+[3.052s] running install_lib
+[3.054s] creating /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber
+[3.054s] copying /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber
+[3.054s] copying /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber
+[3.054s] copying /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/__init__.py -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber
+[3.054s] copying /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber
+[3.055s] byte-compiling /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[3.057s] byte-compiling /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber/subscriber_old_school.py to subscriber_old_school.cpython-38.pyc
+[3.057s] byte-compiling /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber/__init__.py to __init__.cpython-38.pyc
+[3.057s] byte-compiling /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber/subscriber_lambda.py to subscriber_lambda.cpython-38.pyc
+[3.057s] running install_data
+[3.058s] copying resource/examples_rclpy_minimal_subscriber -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[3.059s] copying package.xml -> /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber
+[3.059s] running install_egg_info
+[3.062s] Copying ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info to /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages/examples_rclpy_minimal_subscriber-0.9.4-py3.8.egg-info
+[3.063s] running install_scripts
+[3.086s] Installing subscriber_lambda script to /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.086s] Installing subscriber_member_function script to /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.086s] Installing subscriber_old_school script to /home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[3.087s] writing list of installed files to '/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log'
+[3.144s] Invoked command in '/home/muzz/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' returned '0': PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/muzz/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --install-scripts $base/lib/examples_rclpy_minimal_subscriber --single-version-externally-managed install_data --force

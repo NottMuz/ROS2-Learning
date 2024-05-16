@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="0" hostname="muzz-Aspire-A715-42G" name="pytest" skipped="0" tests="3" time="0.290" timestamp="2024-05-14T14:26:19.649914"><testcase classname="examples_rclpy_minimal_publisher.topics.minimal_publisher.test.test_copyright" name="test_copyright" time="0.018"><system-out>No problems found, checked 7 files
+</system-out></testcase><testcase classname="examples_rclpy_minimal_publisher.topics.minimal_publisher.test.test_flake8" name="test_flake8" time="0.175"><system-out>
+8 files checked
+No problems found
+
+Checked files:
+
+* ./setup.py
+* ./test/test_copyright.py
+* ./test/test_pep257.py
+* ./test/test_flake8.py
+* ./examples_rclpy_minimal_publisher/publisher_member_function.py
+* ./examples_rclpy_minimal_publisher/publisher_old_school.py
+* ./examples_rclpy_minimal_publisher/__init__.py
+* ./examples_rclpy_minimal_publisher/publisher_local_function.py
+</system-out></testcase><testcase classname="examples_rclpy_minimal_publisher.topics.minimal_publisher.test.test_pep257" name="test_pep257" time="0.029"><system-out>checking ./examples_rclpy_minimal_publisher/__init__.py
+checking ./examples_rclpy_minimal_publisher/publisher_local_function.py
+checking ./examples_rclpy_minimal_publisher/publisher_member_function.py
+checking ./examples_rclpy_minimal_publisher/publisher_old_school.py
+checking ./setup.py
+checking ./test/test_copyright.py
+checking ./test/test_flake8.py
+checking ./test/test_pep257.py
+No problems found
+</system-out></testcase></testsuite></testsuites>

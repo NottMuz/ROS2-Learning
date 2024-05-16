@@ -1,0 +1,21 @@
+[0.845s] Invoking command in '/home/muzz/ros2_ws/src/examples/rclpy/services/minimal_client': AMENT_PREFIX_PATH=/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.316s] [1m============================= test session starts ==============================[0m
+[1.317s] platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+[1.317s] cachedir: /home/muzz/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache
+[1.317s] rootdir: /home/muzz/ros2_ws/src/examples/rclpy, inifile: pytest.ini
+[1.317s] plugins: ament-xmllint-0.9.8, ament-flake8-0.9.8, launch-testing-0.10.10, ament-copyright-0.9.8, launch-testing-ros-0.11.7, ament-lint-0.9.8, ament-pep257-0.9.8, cov-2.8.1, colcon-core-0.16.1
+[1.317s] [1mcollecting ... [0m[1m
+[1.317s] collected 3 items                                                              [0m
+[1.317s] 
+[1.329s] test/test_copyright.py [32m.[0m[36m                                                 [ 33%][0m
+[1.433s] test/test_flake8.py [32m.[0m[36m                                                    [ 66%][0m
+[1.458s] test/test_pep257.py [32m.[0m[36m                                                    [100%][0m
+[1.459s] 
+[1.459s] [33m=============================== warnings summary ===============================[0m
+[1.459s] /usr/lib/python3/dist-packages/pydocstyle/config.py:6
+[1.459s]   Warning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+[1.459s] 
+[1.459s] -- Docs: https://docs.pytest.org/en/latest/warnings.html
+[1.459s] - generated xml file: /home/muzz/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml -
+[1.459s] [33m[1m===================== 3 passed, 1 warnings in 0.20 seconds =====================[0m
+[1.608s] Invoked command in '/home/muzz/ros2_ws/src/examples/rclpy/services/minimal_client' returned '0': AMENT_PREFIX_PATH=/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/muzz/ros2_ws/build/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

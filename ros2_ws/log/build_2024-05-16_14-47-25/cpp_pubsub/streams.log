@@ -1,0 +1,46 @@
+[0.024s] Invoking command in '/home/muzz/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/cpp_pubsub
+[0.110s] -- The C compiler identification is GNU 9.4.0
+[0.189s] -- The CXX compiler identification is GNU 9.4.0
+[0.197s] -- Check for working C compiler: /usr/bin/cc
+[0.295s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.298s] -- Detecting C compiler ABI info
+[0.393s] -- Detecting C compiler ABI info - done
+[0.414s] -- Detecting C compile features
+[0.414s] -- Detecting C compile features - done
+[0.416s] -- Check for working CXX compiler: /usr/bin/c++
+[0.524s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.526s] -- Detecting CXX compiler ABI info
+[0.643s] -- Detecting CXX compiler ABI info - done
+[0.652s] -- Detecting CXX compile features
+[0.652s] -- Detecting CXX compile features - done
+[0.655s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.695s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.695s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.885s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.957s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.958s] -- Added test 'lint_cmake' to check CMake code style
+[0.959s] -- Added test 'xmllint' to check XML markup files
+[0.961s] -- Configuring done
+[0.962s] -- Generating done
+[0.963s] -- Build files have been written to: /home/muzz/ros2_ws/build/cpp_pubsub
+[0.966s] Invoked command in '/home/muzz/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/cpp_pubsub
+[0.972s] Invoking command in '/home/muzz/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/cpp_pubsub -- -j16 -l16
+[1.031s] Invoked command in '/home/muzz/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/cpp_pubsub -- -j16 -l16
+[1.085s] Invoking command in '/home/muzz/ros2_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/cpp_pubsub
+[1.098s] -- Install configuration: ""
+[1.099s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[1.099s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[1.099s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[1.100s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv
+[1.100s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[1.100s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv
+[1.101s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[1.101s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[1.101s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[1.101s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv
+[1.101s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv
+[1.102s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[1.102s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[1.102s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[1.102s] -- Installing: /home/muzz/ros2_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[1.104s] Invoked command in '/home/muzz/ros2_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/muzz/ros2_ws/install/muzz_package:/home/muzz/ros2_ws/install/teleop_twist_keyboard:/home/muzz/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/muzz/ros2_ws/install/examples_rclpy_minimal_service:/home/muzz/ros2_ws/install/examples_rclpy_minimal_publisher:/home/muzz/ros2_ws/install/examples_rclpy_minimal_client:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_server:/home/muzz/ros2_ws/install/examples_rclpy_minimal_action_client:/home/muzz/ros2_ws/install/examples_rclpy_executors:/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/cpp_pubsub

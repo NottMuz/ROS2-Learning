@@ -1,0 +1,77 @@
+[0.152s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor
+[1.968s] -- The C compiler identification is GNU 9.4.0
+[1.968s] -- The CXX compiler identification is GNU 9.4.0
+[1.968s] -- Check for working C compiler: /usr/bin/cc
+[1.968s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.968s] -- Detecting C compiler ABI info
+[1.968s] -- Detecting C compiler ABI info - done
+[1.968s] -- Detecting C compile features
+[1.969s] -- Detecting C compile features - done
+[1.969s] -- Check for working CXX compiler: /usr/bin/c++
+[1.969s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.969s] -- Detecting CXX compiler ABI info
+[1.969s] -- Detecting CXX compiler ABI info - done
+[1.969s] -- Detecting CXX compile features
+[1.969s] -- Detecting CXX compile features - done
+[1.969s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.969s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.969s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.969s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.969s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.969s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.970s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.970s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.970s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.970s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.970s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.970s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.970s] -- Looking for pthread.h
+[1.970s] -- Looking for pthread.h - found
+[1.970s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.970s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.970s] -- Looking for pthread_create in pthreads
+[1.970s] -- Looking for pthread_create in pthreads - not found
+[1.970s] -- Looking for pthread_create in pthread
+[1.970s] -- Looking for pthread_create in pthread - found
+[1.971s] -- Found Threads: TRUE  
+[2.077s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.232s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.233s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.233s] -- Configured cppcheck include dirs: 
+[2.234s] -- Configured cppcheck exclude dirs and/or files: 
+[2.235s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.235s] -- Configured cpplint exclude dirs and/or files: 
+[2.235s] -- Added test 'lint_cmake' to check CMake code style
+[2.236s] -- Added test 'uncrustify' to check C / C++ code style
+[2.236s] -- Configured uncrustify additional arguments: 
+[2.237s] -- Added test 'xmllint' to check XML markup files
+[2.242s] -- Configuring done
+[2.253s] -- Generating done
+[2.255s] -- Build files have been written to: /home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor
+[2.273s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/muzz/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor
+[2.274s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor -- -j16 -l16
+[2.356s] [35m[1mScanning dependencies of target multithreaded_executor[0m
+[2.493s] [ 50%] [32mBuilding CXX object CMakeFiles/multithreaded_executor.dir/multithreaded_executor.cpp.o[0m
+[11.051s] [100%] [32m[1mLinking CXX executable multithreaded_executor[0m
+[11.284s] [100%] Built target multithreaded_executor
+[11.298s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor -- -j16 -l16
+[11.336s] Invoking command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor
+[11.348s] -- Install configuration: ""
+[11.349s] -- Execute custom install script
+[11.349s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/lib/examples_rclcpp_multithreaded_executor/multithreaded_executor
+[11.363s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_multithreaded_executor
+[11.376s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_multithreaded_executor
+[11.389s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.sh
+[11.402s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/ament_prefix_path.dsv
+[11.415s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.sh
+[11.429s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/environment/path.dsv
+[11.442s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.bash
+[11.449s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.sh
+[11.461s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.zsh
+[11.470s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/local_setup.dsv
+[11.483s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.dsv
+[11.490s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/ament_index/resource_index/packages/examples_rclcpp_multithreaded_executor
+[11.500s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig.cmake
+[11.510s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/cmake/examples_rclcpp_multithreaded_executorConfig-version.cmake
+[11.518s] -- Symlinking: /home/muzz/ros2_ws/install/examples_rclcpp_multithreaded_executor/share/examples_rclcpp_multithreaded_executor/package.xml
+[11.532s] Invoked command in '/home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/muzz/ros2_ws/build/examples_rclcpp_multithreaded_executor
