@@ -3,9 +3,9 @@
 <package format="3">
   <name>cpp_pubsub</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="muzz@todo.todo">muzz</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Examples of minimal publisher/subscriber using rclcpp</description>
+  <maintainer email="muzzammmil.r04@gmail.com">muzz</maintainer>
+  <license>Apache License 2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -14,5 +14,8 @@
 
   <export>
     <build_type>ament_cmake</build_type>
+    
+    <depend>rclcpp</depend>
+    <depend>std_msgs</depend>
   </export>
 </package>
