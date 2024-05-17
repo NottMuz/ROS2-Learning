@@ -45,6 +45,35 @@
   **`install(TARGETS
   talker
   DESTINATION lib/${PROJECT_NAME}) `**
+
+## Steps to Making a C++ Subscriber Package
+
+### **1.) Create The Package**
+- Create with: **` ros2 pkg create --build-type ament_cmake <pkg_name>`**
+- It is "ament_cmake" for C++, would be "ament_python" for python
+- Can also put "--node-name <node_name>" to generate a node as well
+
+### **2.) Write The Publisher Node**
+- Can create ourselves, in this case we will source one to our 'src' folder with: **`wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/foxy/rclcpp/topics/minimal_subscriber/member_function.cpp`**
+- Provides us with the C++ file for our subscriber
+
+
+#### **2.5.) Examination of The C++ file**
+- Can be seen within: **`ROS2-Learning/cpp_pubsub/src/subscriber_member_function.cpp`**
+
+
+### **3.) Adding Dependencies (package.xml & CMakeList.txt)**
+-  Resolved in the publisher portion above
+
+### **4.) Making Sure ROS2 Can Find The Executable/Node**
+- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
+**`add_executable(listener src/subscriber_member_function.cpp)`**
+**`ament_target_dependencies(listener rclcpp std_msgs)`**
+- To allow **`ros2 run`** to find the node add in the same file:
+  **`install(TARGETS
+  talker
+  listener
+  DESTINATION lib/${PROJECT_NAME})`**
   
   
   
