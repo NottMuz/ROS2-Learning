@@ -7,9 +7,9 @@
 - Check the ".cpp" files for both nodes to see the relavent 'notes'/documentation for the implementation of each in ROS2
 - Also remember that after creating the packages you need to follow the standard procedure of building the package(s) using **`colcon`** and sourcing the local setup files
 
-## Steps to Making a C++ Publisher Package
+## Steps to Making a C++ Publisher Node
 
-### **1.) Create The Package**
+### **1.) Create The Package for both**
 - Create with: **` ros2 pkg create --build-type ament_cmake <pkg_name>`**
 - It is "ament_cmake" for C++, would be "ament_python" for python
 - Can also put "--node-name <node_name>" to generate a node as well
@@ -46,12 +46,10 @@
   talker
   DESTINATION lib/${PROJECT_NAME}) `**
 
-## Steps to Making a C++ Subscriber Package
+## Steps to Making a C++ Subscriber node
 
 ### **1.) Create The Package**
-- Create with: **` ros2 pkg create --build-type ament_cmake <pkg_name>`**
-- It is "ament_cmake" for C++, would be "ament_python" for python
-- Can also put "--node-name <node_name>" to generate a node as well
+- Done in first part for the Publisher node
 
 ### **2.) Write The Publisher Node**
 - Can create ourselves, in this case we will source one to our 'src' folder with: **`wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/foxy/rclcpp/topics/minimal_subscriber/member_function.cpp`**
