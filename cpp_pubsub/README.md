@@ -51,7 +51,7 @@
 ### **1.) Create The Package**
 - Done in first part for the Publisher node
 
-### **2.) Write The Publisher Node**
+### **2.) Write The Subscriber Node**
 - Can create ourselves, in this case we will source one to our 'src' folder with: **`wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/foxy/rclcpp/topics/minimal_subscriber/member_function.cpp`**
 - Provides us with the C++ file for our subscriber
 
