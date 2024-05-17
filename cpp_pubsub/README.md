@@ -5,6 +5,7 @@
 
 - This is a C++ ROS2 package that contains a subscriber node and publisher node
 - Check the ".cpp" files for both nodes to see the relavent 'notes'/documentation for the implementation of each in ROS2
+- Also remember that after creating the packages you need to follow the standard procedure of building the package(s) using **`colcon`** and sourcing the local setup files
 
 ## Steps to Making a C++ Publisher Package
 
