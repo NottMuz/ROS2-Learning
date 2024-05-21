@@ -17,9 +17,9 @@
 ### **2.) Write The Publisher Node**
 - Can create ourselves, in this case we will source one to our 'src' folder with:
   
-**`get https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`**
+**`wget https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`**
 
-- Provides us with the C++ file for our publisher
+- Provides us with the Python file for our publisher
 
 
 #### **2.5.) Examination of The Python file**
