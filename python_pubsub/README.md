@@ -58,41 +58,47 @@ This setup allows your ROS 2 nodes to be easily executed and managed within the 
 
 , also make sure to fill in the documentation
 
-### **5.) Making Sure ROS2 Can Find The Executable/Node**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-**`add_executable(talker src/publisher_member_function.cpp)`**
-**`find_package(std_msgs REQUIRED)`**
-- To allow **`ros2 run`** to find the node add in the same file:
-  **`install(TARGETS
-  talker
-  DESTINATION lib/${PROJECT_NAME}) `**
+### **5.) Checking the setup.cfg File**
+- Make sure the config file is correctly populated before building
 
-## Steps to Making a C++ Subscriber node
+## Steps to Making a Python Subscriber node
 
 ### **1.) Create The Package**
 - Done in first part for the Publisher node
 
 ### **2.) Write The Subscriber Node**
-- Can create ourselves, in this case we will source one to our 'src' folder with: **`wget -O subscriber_member_function.cpp https://raw.githubusercontent.com/ros2/examples/foxy/rclcpp/topics/minimal_subscriber/member_function.cpp`**
-- Provides us with the C++ file for our subscriber
+- Can create ourselves, in this case we will source one to our 'ros2_ws/src/py_pubsub/py_pubsub' folder with:
+
+  **`wget https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_subscriber/examples_rclpy_minimal_subscriber/subscriber_member_function.py`**
+
+- Provides us with the Python file for our subscriber
 
 
-#### **2.5.) Examination of The C++ file**
-- Can be seen within: **`ROS2-Learning/cpp_pubsub/src/subscriber_member_function.cpp`**
+#### **2.5.) Examination of The Python file**
+- Can be seen within: **`ROS2-Learning/python_pubsub/python_pubsub/subscriber_member_function.cpp`**
 
 
-### **3.) Adding Dependencies (package.xml & CMakeList.txt)**
+### **3.) Adding Dependencies (package.xml)**
 -  Resolved in the publisher portion above
 
-### **4.) Making Sure ROS2 Can Find The Executable/Node**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-**`add_executable(listener src/subscriber_member_function.cpp)`**
-**`ament_target_dependencies(listener rclcpp std_msgs)`**
-- To allow **`ros2 run`** to find the node add in the same file:
-  **`install(TARGETS
-  talker
-  listener
-  DESTINATION lib/${PROJECT_NAME})`**
+### **4.) Adding an Entry Point**
+- "Adding entry points in a Python package:
+
+    Defines executable scripts.
+    Simplifies script execution.
+    Ensures proper package distribution.
+    Integrates your package with ROS 2 tools and workflows.
+
+This setup allows your ROS 2 nodes to be easily executed and managed within the ROS 2 ecosystem."
+
+- This can be done by entering the **`setup.py`** file in the package directory and adding:
+  
+**`entry_points={
+        'console_scripts': [
+        'listener = py_pubsub.subscriber_member_function:main',
+        'talker = py_pubsub.publisher_member_function:main',
+        ],
+},`**
   
   
   
