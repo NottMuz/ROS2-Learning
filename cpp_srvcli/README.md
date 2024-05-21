@@ -26,7 +26,7 @@
 
 **`add_two_ints_server.cpp`** 
 
--**Note**: To create a .cpp file, or any other for that matter, via the terminal open the file with the txt editor and name you want, edit it and then save it. The file will be made and then saved like that
+- **Note**: To create a .cpp file, or any other for that matter, via the terminal open the file with the txt editor and name you want, edit it and then save it. The file will be made and then saved like that
 - The required code for the file can be seen in the file in this repository
 
 
