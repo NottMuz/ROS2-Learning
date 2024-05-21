@@ -15,7 +15,8 @@
 - Can also put "--node-name <node_name>" to generate a node as well
 
 ### **2.) Write The Publisher Node**
-- Can create ourselves, in this case we will source one to our 'src' folder with: **`get https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`**
+- Can create ourselves, in this case we will source one to our 'src' folder with:
+**`get https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`**
 - Provides us with the C++ file for our publisher
 
 
