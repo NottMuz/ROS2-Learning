@@ -48,11 +48,12 @@ public:
         //"topic" : topic name we are subscribing to
         //"10" : the queue size for the incoming messages
 
-      //this one is a bit tricky so it deserves seperate attention
-        // "std::bind(&MinimalSubscriber::topic_callback, this, _1)": essentially we are binding a 
-          //pointer to the "topic_callback" function of 'THIS' classes's instance and SINCE THE 
-          //PARAMETER FOR THE FUNCTION IS A MSG OF TYPE STRING THE PLACEHOLDER (_1) IS FOR THAT MSG
-          //TO BE SENT TO THE FUNCTION!!!!!!
+      //this one is a bit tricky so it deserves seperate attention, but the jist of it is that we are 
+        //we are passing a callback function to be called whenever the node hears a msg
+      // "std::bind(&MinimalSubscriber::topic_callback, this, _1)": essentially we are binding a 
+        //pointer to the "topic_callback" function of 'THIS' classes's instance and SINCE THE 
+        //PARAMETER FOR THE FUNCTION IS A MSG OF TYPE STRING THE PLACEHOLDER (_1) IS FOR THAT MSG
+        //TO BE SENT TO THE FUNCTION!!!!!!
       "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
     //-------------------------------------------------------------------------------------------------------
   }
