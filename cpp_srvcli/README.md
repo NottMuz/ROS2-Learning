@@ -21,7 +21,7 @@
 - Due to using the **`--dependencies`** option in the previous step, the only thing that needs to be updated here is the documentation
 
 
-### **2.) Write The Service Node**
+### **3.) Write The Service Node**
 - Will create the node ourselves by creating a new C++ file in the src directory of the package called:
 
 **`add_two_ints_server.cpp`** 
@@ -30,32 +30,18 @@
 - The required code for the file can be seen in the file in this repository
 
 
-#### **2.5.) Examination of The C++ file**
-- Can be seen within: **`ROS2-Learning/cpp_pubsub/src/publisher_member_function.cpp`**
-
-
-### **3.) Adding Dependencies (package.xml)**
-- Due to the use of the 'rosclient' and the 'std_msgs' namespaces (imported in the .cpp file), we need to resolve those dependencies so they can be called/found correctly during runtime
-- This can be done by entering the **`package.xml`** file in the package directory and adding:
-**`<depend>rclcpp</depend>`**
-**`<depend>std_msgs</depend>`**
-  after **`ament_cmake`**, also make sure to fill in the documentation for the <description>, <maintainer> and <license> tags
-  
-### **4.) Adding Dependencies (CMakeLists.txt)**
-- Due to the same reasons as before we need to make sure to do it here
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding:
-**`find_package(rclcpp REQUIRED)`**
-**`find_package(std_msgs REQUIRED)`**
-  after **`find_package(ament_cmake REQUIRED)`**, also make sure to fill in the documentation
-
-### **5.) Making Sure ROS2 Can Find The Executable/Node**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-**`add_executable(talker src/publisher_member_function.cpp)`**
-**`find_package(std_msgs REQUIRED)`**
+#### **4.) Add The Excecutable For ROS To Find**
+- - This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
+**`add_executable(listener src/subscriber_member_function.cpp)`**
+**`ament_target_dependencies(listener rclcpp std_msgs)`**
 - To allow **`ros2 run`** to find the node add in the same file:
   **`install(TARGETS
   talker
-  DESTINATION lib/${PROJECT_NAME}) `**
+  listener
+  DESTINATION lib/${PROJECT_NAME})`**
+
+
+
 
 ## Steps to Making a C++ Subscriber node
 
