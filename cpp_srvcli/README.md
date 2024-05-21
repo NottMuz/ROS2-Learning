@@ -31,9 +31,11 @@
 
 
 #### **4.) Add The Excecutable For ROS To Find**
-- - This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-**`add_executable(listener src/subscriber_member_function.cpp)`**
-**`ament_target_dependencies(listener rclcpp std_msgs)`**
+- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
+
+  - **`add_executable(listener src/subscriber_member_function.cpp)`**
+  - **`ament_target_dependencies(listener rclcpp std_msgs)`**
+  
 - To allow **`ros2 run`** to find the node add in the same file:
   **`install(TARGETS
   talker
