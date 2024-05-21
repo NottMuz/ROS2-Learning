@@ -16,19 +16,26 @@
 
 ### **2.) Write The Publisher Node**
 - Can create ourselves, in this case we will source one to our 'src' folder with:
+  
 **`get https://raw.githubusercontent.com/ros2/examples/foxy/rclpy/topics/minimal_publisher/examples_rclpy_minimal_publisher/publisher_member_function.py`**
+
 - Provides us with the C++ file for our publisher
 
 
 #### **2.5.) Examination of The Python file**
-- Can be seen within: **`ROS2-Learning/python_pubsub/python_pubsub/publisher_member_function.py`**
+- Can be seen within:
+
+**`ROS2-Learning/python_pubsub/python_pubsub/publisher_member_function.py`**
 
 
 ### **3.) Adding Dependencies (package.xml)**
 - Due to the use of the 'rosclient' and the 'std_msgs' namespaces (imported in the .py file), we need to resolve those dependencies so they can be called/found correctly during runtime
 - This can be done by entering the **`package.xml`** file in the package directory and adding:
+
 **`<exec_depend>rclpy</exec_depend>`**
+
 **`<exec_depend>std_msgs</exec_depend>`**
+
 , also make sure to fill in the documentation for the <description>, <maintainer> and <license> tags
   
 ### **4.) Adding an Entry Point**
