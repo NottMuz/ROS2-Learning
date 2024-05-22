@@ -16,3 +16,6 @@ Just a repository where I am learning about ROS2
 
 ## 3.1) tutorial_interfaces
 - CMake package that for learning about custom message (.msg and .srv) formats
+
+## 3.2) more_interfaces
+- CMake package that for learning about implementing custom interfaces
