@@ -20,7 +20,7 @@
 - Due to using the **`--dependencies`** option in the previous step, the only thing that needs to be updated here is the documentation
 
 
-### **3.) Write The Service Node**
+### **3.) Write The Server Node**
 - Will create the node ourselves by creating a new C++ file in the src directory of the package called:
 
   - **`add_two_ints_server.cpp`** 
@@ -55,22 +55,19 @@
 - The required code for the file can be seen in the file in this repository
 
 
-#### **2.5.) Examination of The C++ file**
-- Can be seen within: **`ROS2-Learning/cpp_pubsub/src/subscriber_member_function.cpp`**
-
-
-### **3.) Adding Dependencies (package.xml & CMakeList.txt)**
--  Resolved in the publisher portion above
-
-### **4.) Making Sure ROS2 Can Find The Executable/Node**
+### **3.) Adding Executable**
 - This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-**`add_executable(listener src/subscriber_member_function.cpp)`**
-**`ament_target_dependencies(listener rclcpp std_msgs)`**
+
+  - **`add_executable(client src/add_two_ints_client.cpp)`**
+  - **`ament_target_dependencies(client rclcpp example_interfaces)`**
+  
 - To allow **`ros2 run`** to find the node add in the same file:
-  **`install(TARGETS
-  talker
-  listener
+
+    - **`install(TARGETS
+  client
   DESTINATION lib/${PROJECT_NAME})`**
+
+
   
   
   
