@@ -22,14 +22,17 @@
     - **`float64 radius`**
   - Using another packages message means that when the data structure provided by the message is called upon, the data needed for the **`center`** is also required
 
+  #### 2.2) srv definition
+ - Need to create the format in the **`srv`** directory, and the file should be called **`AddThreeInts.srv`**. Its data structure is:
+    - **`int64 a`**
+    - **`int64 b`**
+    - **`int64 c`**
+    - **`---`**
+    - **`int64 sum`**
+    - **Note:** The line with **`---`** seperates the format of request from that of the reply
 
-### **3.) Write The Server Node**
-- Will create the node ourselves by creating a new C++ file in the src directory of the package called:
-
-  - **`add_two_ints_server.cpp`** 
-
-- **Note**: To create a .cpp file, or any other for that matter, via the terminal open the file with the txt editor and name you want, edit it and then save it. The file will be made and then saved like that
-- The required code for the file can be seen in the file in this repository
+### **3.) CMakeLists.txt Adjustment to Allow C++ and Python**
+- 
 
 
 ### **4.) Add The Excecutable For ROS To Find**
@@ -44,35 +47,7 @@
   DESTINATION lib/${PROJECT_NAME})`**
 
 
-## Steps to Making a C++ Client node
 
-### **1.) Create The Package**
-- Done in first part for the Publisher node
-
-### **2.) Write The Client Node**
-- Will create the node ourselves by creating a new C++ file in the src directory of the package called:
-
-  - **`add_two_ints_client.cpp`** 
-
-- **Note**: To create a .cpp file, or any other for that matter, via the terminal open the file with the txt editor and name you want, edit it and then save it. The file will be made and then saved like that
-- The required code for the file can be seen in the file in this repository
-
-
-### **3.) Adding Executable**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-
-  - **`add_executable(client src/add_two_ints_client.cpp)`**
-  - **`ament_target_dependencies(client rclcpp example_interfaces)`**
-  
-- To allow **`ros2 run`** to find the node add in the same file:
-
-    - **`install(TARGETS
-  client
-  DESTINATION lib/${PROJECT_NAME})`**
-
-
-  
-  
   
 
   
