@@ -2,17 +2,17 @@
 
 Just a repository where I am learning about ROS2
 
-## cpp_pubsub
+## 1.1) cpp_pubsub
 - C++ package for learning about the Publisher-Subscriber communication protocol within ROS2
 
-## cpp_srvcli
+## 1.2) cpp_srvcli
 - C++ package for learning about the Service-Client communication protocol within ROS2
 
-## python_pubsub
+## 2.1) python_pubsub
 - Python package for learning about the Publisher-Subscriber communication protocol within ROS2
 
-## python_srvcli
+## 2.2) python_srvcli
 - Python package for learning about the Service-Client communication protocol within ROS2
 
-## tutorial_interfaces
+## 3.1) tutorial_interfaces
 - CMake package that for learning about custom message (.msg and .srv) formats
