@@ -49,17 +49,12 @@
 - **Note**: To create a .py file, or any other for that matter, via the terminal open the file with the txt editor and name you want, edit it and then save it. The file will be made and then saved like that
 - The required code for the file can be seen in the file in this repository
 
-### **3.) Adding Executable**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
+### **3.) Adding an Entry Point**
+- This can be done by entering the **`setup.py`** file in the package directory and adding the executable and naming it service to allow the use of **`ros2 run`** for the node:
 
-  - **`add_executable(client src/add_two_ints_client.cpp)`**
-  - **`ament_target_dependencies(client rclcpp example_interfaces)`**
-  
-- To allow **`ros2 run`** to find the node add in the same file:
+  - **`'client = py_srvcli.client_member_function:main'`**
 
-    - **`install(TARGETS
-  client
-  DESTINATION lib/${PROJECT_NAME})`**
+- Done between the **`console_scripts:`** brackets
 
 
   
