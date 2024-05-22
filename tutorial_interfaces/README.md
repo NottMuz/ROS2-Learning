@@ -32,7 +32,15 @@
     - **Note:** The line with **`---`** seperates the format of request from that of the reply
 
 ### **3.) CMakeLists.txt Adjustment to Allow C++ and Python**
-- 
+- To convert the interfaces you defined into language-specific code (like C++ and Python) so that they can be used in those languages, add the following lines:
+  - find_package(geometry_msgs REQUIRED)
+  - find_package(rosidl_default_generators REQUIRED)
+  - rosidl_generate_interfaces(${PROJECT_NAME}
+    - "msg/Num.msg"
+    - "msg/Sphere.msg"
+    - "srv/AddThreeInts.srv"
+    - DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
+)
 
 
 ### **4.) Add The Excecutable For ROS To Find**
