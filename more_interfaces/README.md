@@ -29,9 +29,9 @@
 ### **3.) CMakeLists.txt Adjustment to Allow C++ and Python**
 - To convert the interfaces you defined into language-specific code (like C++ and Python) so that they can be used in those languages, add the following lines:
   - **`find_package(rosidl_default_generators REQUIRED)`** #finds the packages that generates message code from msg/srv file
-  - Declare the list of messages you want to generate (**Also, **`set`** can also be used to neatly list all the interfaces**:
+  - Declare the list of messages you want to generate (**Also, **`set`** can be used to neatly list all the interfaces**):
   - **set(msg_files`**
-    - **``"msg/AddressBook.msg`**
+    - **`"msg/AddressBook.msg`**
   - Generate the messages:
   - **`rosidl_generate_interfaces(${PROJECT_NAME}`**
     - **`${msg_files})`**
