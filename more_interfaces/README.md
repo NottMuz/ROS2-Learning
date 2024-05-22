@@ -38,7 +38,7 @@
   - **`ament_export_dependencies(rosidl_default_runtime)`**
   - **Note:** Implementing these allows us to generate source files from the **msg definition**
 
-### **4.) package.xml Adjustment **
+### **4.) package.xml Adjustment**
 - Essentially the interfaces rely on the **`rosidl_default_generators`** package in order to generate language specific code (py or cpp) that our nodes can utilize, therefore we need to declare a **build tool dependency** on it
   - What is a build tool dependency you may be asking, it's akin to **`ament`** or **`colcon`**, where it essentially means that the package(s) rely on other tools/libraries during thier compilation, and a build tool will help contstruct those 'relationships' to the requirements. It does not run during the runtime of the application however.
 
