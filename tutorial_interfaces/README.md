@@ -1,6 +1,8 @@
 
 # **Custom Message Definitions Package**
 
+-**Note:** The packages that will use these msg/srv formats are the publisher and subscriber ones created previously, however minor adjustments need to be made to them to accomodate these new formats. That is not done in this repo.
+
 ## What Is This For?
 
 - This is a CMake ROS2 package that contains the essentials for understanding how to create your .msg or .srv interface definitions (ALTHOUGH CMAKE, CAN HOLD .py & .cpp)
@@ -41,21 +43,15 @@
     - **`"srv/AddThreeInts.srv"`**
     - **`DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg )`**
 
+### **4.) package.xml Adjustment **
+- Essentially the interfaces rely on the **`rosidl_default_generators`** package in order to generate language specific code (py or cpp) that our nodes can utilize, therefore we need to declare a **build tool dependency** on it
+  - What is a build tool dependency you may be asking, it's akin to **`ament`** or **`colcon`**, where it essentially means that the package(s) rely on other tools/libraries during thier compilation, and a build tool will help contstruct those 'relationships' to the requirements. It does not run during the runtime of the application however.
 
-
-### **4.) Add The Excecutable For ROS To Find**
-- This can be done by entering the **`CMakeLists.txt`** file in the package directory and adding the executable and naming it talker to allow the use of **`ros2 run`** for the node:
-
-  - **`add_executable(server src/add_two_ints_server.cpp)`**
-  - **`ament_target_dependencies(server rclcpp example_interfaces)`**
-  
-- To allow **`ros2 run`** to find the node add in the same file:
-  **`install(TARGETS
-  server
-  DESTINATION lib/${PROJECT_NAME})`**
-
-
-
-  
-
+- We also have a **runtime dependency** on the **`rosidl_default_runtime`** package, as it provides the necessary support to use the code from out ROS2 nodes
+- For the syntax regarding how to add these dependencies:
+  - **`<depend>geometry_msgs</depend>`**
+  - **`<buildtool_depend>rosidl_default_generators</buildtool_depend>`**
+  - **`<exec_depend>rosidl_default_runtime</exec_depend>`**
+  - **`<member_of_group>rosidl_interface_packages</member_of_group>`**
+  - **Note:** The rosidl_interface_packages is the name of the dependency group that your package, tutorial_interfaces, should be associated with, declared using the <member_of_group> tag.
   
