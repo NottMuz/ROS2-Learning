@@ -4,7 +4,7 @@
 ## What Is This For?
 
 - This is a CMake ROS2 package that contains the essentials for understanding how to implement the custom msg/srv formats within the same package as our other nodes instead from a seperate package meant for messages
-- 
+
 - Also remember that after creating the package you need to follow the standard procedure of building the package(s) using **`colcon`** and sourcing the local setup files
 
 ## Steps to Creating Our Custom Message Definitions
@@ -48,4 +48,6 @@
   - **`<exec_depend>rosidl_default_runtime</exec_depend>`**
   - **`<member_of_group>rosidl_interface_packages</member_of_group>`**
   - **Note:** The rosidl_interface_packages is the name of the dependency group that your package, tutorial_interfaces, should be associated with, declared using the <member_of_group> tag.
-  
+
+  ### **5.) Using an Interface From The Same Package**
+  - The code for the file can be seen in **`publish_address_book.cpp`** in the package source folder
