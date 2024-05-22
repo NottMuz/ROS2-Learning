@@ -1,7 +1,7 @@
 
 # **Custom Message Definitions Package**
 
--**Note:** The packages that will use these msg/srv formats are the publisher and subscriber ones created previously, however minor adjustments need to be made to them to accomodate these new formats. That is not done in this repo.
+- **Note:** The packages that will use these msg/srv formats are the publisher and subscriber ones created previously, however minor adjustments need to be made to them to accomodate these new formats. That is not done in this repo.
 
 ## What Is This For?
 
