@@ -55,11 +55,19 @@
 ### **6.) Build The Publisher**
 - We need to create a new target for this node in the CMakeLists.txt:
 
-  - **`find_package(rclcpp REQUIRED)`**
+  - **`find_package(rclcpp REQUIRED)`** #Locates package for dependencies
 
-  - **`add_executable(publish_address_book src/publish_address_book.cpp)`**
-  - **`ament_target_dependencies(publish_address_book rclcpp)`**
+  - **`add_executable(publish_address_book src/publish_address_book.cpp)`** #adds an executable target by providing a name and its location
+  - **`ament_target_dependencies(publish_address_book rclcpp)`** #automatically handles dependencies for the target
 
   - **`install(TARGETS`**
     - **` publish_address_book`**
-     - **` DESTINATION lib/${PROJECT_NAME})`**
+     - **` DESTINATION lib/${PROJECT_NAME})`** # specifies which target to install and where
+    
+  ### **6.) Link against the interface**
+-In order to use the messages generated in the same package we need to use the following CMake code:
+  - **`rosidl_target_interfaces(publish_address_book
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")`**
+- This finds the relevant generated C++ code from AddressBook.msg and allows your target to link against it.
+- This step was not necessary when the interfaces being used were from a different package that was built independently. This CMake code is only **required when you want to use interfaces in the same package as the one in which they are defined**.
+
