@@ -6,7 +6,7 @@ Just a repository where I am learning about ROS2
 - **`shared_ptr`** : Attaching a shared pointer to an object/variable allows us to bypass have to manually delete/create the variables in memory, called a "smart pointer". Basically keeps track of how many references there are to the var. and once reaches zero (example we leave a scope) it deletes the memory adress of the actual variable itself.
 - **`<...>`** : Template function call allowing for any parameter/data type to be used in the function
   
-
+# 1.0) C++ ROS2
 ## 1.1) cpp_pubsub
 - C++ package for learning about the Publisher-Subscriber communication protocol within ROS2
 
@@ -16,6 +16,8 @@ Just a repository where I am learning about ROS2
 ## 1.3) cpp_parameters
 - C++ package for learning about parameters in ROS2
 
+# 2.0) Python ROS2
+
 ## 2.1) python_pubsub
 - Python package for learning about the Publisher-Subscriber communication protocol within ROS2
 
@@ -24,6 +26,8 @@ Just a repository where I am learning about ROS2
 
 ## 2.3) python_parameters
 - Python package for learning about parameters in ROS2
+
+# 3.0) Interfaces In ROS2
 
 ## 3.1) tutorial_interfaces
 - CMake package that for learning about custom message (.msg and .srv) formats
