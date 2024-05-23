@@ -49,17 +49,17 @@
   - **`<member_of_group>rosidl_interface_packages</member_of_group>`**
   - **Note:** The rosidl_interface_packages is the name of the dependency group that your package, tutorial_interfaces, should be associated with, declared using the <member_of_group> tag.
 
-  ### **5.) Using an Interface From The Same Package**
-  - The code for the file can be seen in **`publish_address_book.cpp`** in the package source folder
+### **5.) Using an Interface From The Same Package**
+- The code for the file can be seen in **`publish_address_book.cpp`** in the package source folder
  
-  ### **6.) Build The Publisher**
-  - We need to create a new target for this node in the CMakeLists.txt:
+### **6.) Build The Publisher**
+- We need to create a new target for this node in the CMakeLists.txt:
 
-    - **`find_package(rclcpp REQUIRED)`**
+  - **`find_package(rclcpp REQUIRED)`**
 
-    - **`add_executable(publish_address_book src/publish_address_book.cpp)`**
-    - **`ament_target_dependencies(publish_address_book rclcpp)`**
+  - **`add_executable(publish_address_book src/publish_address_book.cpp)`**
+  - **`ament_target_dependencies(publish_address_book rclcpp)`**
 
-    - **`install(TARGETS`**
-      - **` publish_address_book`**
-      - **` DESTINATION lib/${PROJECT_NAME})`**
+  - **`install(TARGETS`**
+    - **` publish_address_book`**
+     - **` DESTINATION lib/${PROJECT_NAME})`**
