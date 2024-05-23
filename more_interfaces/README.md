@@ -51,3 +51,15 @@
 
   ### **5.) Using an Interface From The Same Package**
   - The code for the file can be seen in **`publish_address_book.cpp`** in the package source folder
+ 
+  ### **6.) Build The Publisher**
+  - We need to create a new target for this node in the CMakeLists.txt:
+
+    - **`find_package(rclcpp REQUIRED)`**
+
+    - **`add_executable(publish_address_book src/publish_address_book.cpp)`**
+    - **`ament_target_dependencies(publish_address_book rclcpp)`**
+
+    - **`install(TARGETS`**
+      - **` publish_address_book`**
+      - **` DESTINATION lib/${PROJECT_NAME})`**
