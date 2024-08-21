@@ -52,7 +52,7 @@ This setup allows your ROS 2 nodes to be easily executed and managed within the 
   
 **`entry_points={
         'console_scripts': [
-                'talker = py_pubsub.publisher_member_function:main',
+                'talker = python_pubsub.publisher_member_function:main',
         ],
 },`**
 
@@ -95,8 +95,8 @@ This setup allows your ROS 2 nodes to be easily executed and managed within the 
   
 **`entry_points={
         'console_scripts': [
-        'listener = py_pubsub.subscriber_member_function:main',
-        'talker = py_pubsub.publisher_member_function:main',
+        'listener = python_pubsub.subscriber_member_function:main',
+        'talker = python_pubsub.publisher_member_function:main',
         ],
 },`**
   
